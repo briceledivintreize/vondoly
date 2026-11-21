@@ -1,0 +1,19 @@
+# --- Données propres à une installation (jamais dans le dépôt : dépôt public) ---
+/data/*
+!/data/.gitkeep
+# base SQLite, comptes, identifiants initiaux, sauvegardes, cache PDF
+
+# --- Images générées par le site (recréées par l'administration ou le script d'installation) ---
+/public/uploads/*
+!/public/uploads/.htaccess
+
+# --- Dépendances (installées par composer / npm) ---
+/vendor/
+/tooling/node_modules/
+
+# --- Environnement local ---
+/.claude/
+.DS_Store
+Thumbs.db
+*.log
+.env

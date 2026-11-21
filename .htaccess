@@ -1,0 +1,9 @@
+# Si l'hébergeur ne permet pas de pointer le domaine sur public/,
+# ce fichier redirige tout vers public/ et protège le reste du socle.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(app|data|install|vendor|tooling|docs)(/|$) - [F,L]
+  RewriteRule ^$ public/ [L]
+  RewriteRule ^(?!public/)(.*)$ public/$1 [L]
+</IfModule>
+Options -Indexes

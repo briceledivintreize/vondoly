@@ -1,0 +1,6 @@
+# Fins de ligne Unix pour tout le code (serveurs Linux), binaires intacts
+* text=auto eol=lf
+*.jpg binary
+*.png binary
+*.woff2 binary
+*.pdf binary
